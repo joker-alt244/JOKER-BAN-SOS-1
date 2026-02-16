@@ -108,7 +108,7 @@ def check_temp_expiry():
         f.writelines(active)
 
 def ban_permanent():
-    number = input("🚫𝗘𝗻𝘁𝗲𝗿 𝗧𝗮𝗿𝗴𝗲𝘁🎯 𝗡𝘂𝗺𝗯𝗲𝗿: ").strip()
+    number = input("🐍𝗘𝗻𝘁𝗲𝗿 𝗧𝗮𝗿𝗴𝗲𝘁🎯 𝗡𝘂𝗺𝗯𝗲𝗿: ").strip()
     if is_banned(number):
         print(f"{Fore.RED}❌ {number} 𝗶𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 {is_banned(number)} 𝗯𝗮𝗻𝗻𝗲𝗱.")
         return
@@ -117,7 +117,7 @@ def ban_permanent():
         print("❌ 𝗔𝗰𝘁𝗶𝗼𝗻 𝗰𝗮𝗻𝗰𝗲𝗹𝗹𝗲𝗱.")
         return
     try:
-        reports = int(input("👿 𝗘𝗻𝘁𝗲𝗿 𝗔𝗺𝗼𝘂𝗻𝘁: "))
+        reports = int(input("🐛 𝗘𝗻𝘁𝗲𝗿 𝗔𝗺𝗼𝘂𝗻𝘁: "))
     except ValueError:
         print("❌ 𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗶𝗻𝗽𝘂𝘁.")
         return
